@@ -1,0 +1,12 @@
+name: starwars_explorer
+title: starwars_explorer
+username: andreawk
+account: andreawk
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 13410016
+bundleId: 9396127
+url: https://andreawk.shinyapps.io/starwars_explorer/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
