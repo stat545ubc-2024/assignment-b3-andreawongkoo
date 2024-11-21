@@ -16,7 +16,7 @@ This repository contains the necessary files to deploy the "Star Wars Explorer" 
 
 -   **Feature 1 - Filter by Species, Sex, Homeworld, and Film**: This feature allows users to create a filtered character table by species, sex, homeworld, and film. It dynamically updates the displayed data based on the selected filters.
 
--   **Feature 2: - Scatter Plot of Numeric Relationships:** Users can generate a scatter plot to explore relationships between numeric variables (height, mass, and birth year) based on the filtered characters. The plot’s axes can be customized dynamically for in-depth analysis.
+-   **Feature 2 - Scatter Plot of Numeric Relationships:** Users can generate a scatter plot to explore relationships between numeric variables (height, mass, and birth year) based on the filtered characters. The plot’s axes can be customized dynamically for in-depth analysis.
 
 -   **Feature 3 - Vehicles and Starships Information for Filtered Characters**: This feature generates a subset of the filtered characters with details on their vehicles and starships, providing users with a focused view of these specific attributes.
 
@@ -25,8 +25,8 @@ This repository contains the necessary files to deploy the "Star Wars Explorer" 
 -   **Feature 5 - Download Filtered Data by Species, Sex, and/or Homeworld:** Users can download a `.csv` file containing the filtered character data from Feature 1. Note that the film filter is excluded for code simplicity.
 
 ## Repository Contents:
-- **app.R**: The main R script that contains all the code to run the "Star Wars Explorer" Shiny app, including UI and server components for interactive filtering, visualization, and analysis of the Star Wars dataset.
 - **README.md**: This file, providing instructions and information about the app, dataset source, and features.
-- **www**: A folder containing additional assets, such as images or other files, that enhance the app’s user interface, including a Star Wars logo.
+- **app.R**: The main R script that contains all the code to run the "Star Wars Explorer" Shiny app, including UI and server components for interactive filtering, visualization, and analysis of the Star Wars dataset.
+- **www**: A folder containing additional assets, such as the Star Wars logos. 
 
 Feel free to explore the Star Wars universe through this interactive tool - may the force be with your data exploration!
