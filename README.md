@@ -25,10 +25,10 @@ This repository contains the necessary files to deploy the "Star Wars Explorer" 
 -   **Feature 5 - Download Filtered Data by Species, Sex, and/or Homeworld:** Users can download a `.csv` file containing the filtered character data from Feature 1. Note that the film filter is excluded for code simplicity.
 
 ## Repository Contents:
-- **README.md**: This file, providing instructions and information about the app, dataset source, and features.
-- **starwars_explorer**: The folder that contains all the relevant files for the "Star Wars Explorer" shiny app, such as:  
-  - **app.R**: The main R script that contains all the code to run the app, including UI and server components for interactive filtering, visualization, and analysis of the Star Wars dataset.
-  - **www**: A folder containing additional assets, such as the Star Wars logo.
-  - **Other files and folders**: This includes setup or configuration files and folders (e.g., _rsconnect/shinyapps.io/andreawk_) used for deployment, which can be ignored for general usage.
+- **`README.md`**: This file, providing instructions and information about the app, dataset source, and features.
+- **`starwars_explorer`**: The folder that contains all the relevant files for the "Star Wars Explorer" shiny app, such as:  
+  - **`app.R`**: The main R script that contains all the code to run the app, including UI and server components for interactive filtering, visualization, and analysis of the Star Wars dataset.
+  - **`www`**: A folder containing additional assets, such as the Star Wars logo.
+  - **Other files and folders**: This includes setup or configuration files and folders (e.g., `rsconnect/shinyapps.io/andreawk`) used for deployment, which can be ignored for general usage.
 
 Feel free to explore the Star Wars universe through this interactive tool - may the force be with your data exploration!
