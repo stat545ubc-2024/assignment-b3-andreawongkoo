@@ -1,3 +1,4 @@
+# To load necessary libraries:
 library(shiny)
 library(DT)
 library(tidyverse)
@@ -15,6 +16,22 @@ glimpse(starwars)
 # To preview documentation of `starwars` dataset:
 ?starwars
 
+
+# App Features (also available on README file):
+
+### Feature 1 - Filter by Species, Sex, Homeworld, and Film: This feature allows users to create a filtered character table by species, sex, homeworld, and film. It dynamically updates the displayed data based on the selected filters.
+
+### Feature 2 - Scatter Plot of Numeric Relationships: Users can generate a scatter plot to explore relationships between numeric variables (height, mass, and birth year) based on the filtered characters. The plot’s axes can be customized dynamically for in-depth analysis.
+
+### Feature 3 - Vehicles and Starships Information for Filtered Characters: This feature generates a subset of the filtered characters with details on their vehicles and starships, providing users with a focused view of these specific attributes.
+
+### Feature 4 - Bar Plot of Species Distribution by Category: This feature displays a bar plot showing the distribution of individuals from a selected species within the whole dataset, across categories such as homeworld, vehicles, and starships.
+
+#Feature 5 - Download Filtered Data by Species, Sex, and/or Homeworld: Users can download a `.csv` file containing the filtered character data from Feature 1. Note that the film filter is excluded for code simplicity.
+
+
+
+# Shiny App Code below: 
 
 # Defines UI for the Shiny app:
 ui <- fluidPage(

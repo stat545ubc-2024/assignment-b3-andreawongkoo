@@ -8,7 +8,7 @@ This repository contains the necessary files to deploy the "Star Wars Explorer" 
 
 ## Options to access the app:
 
-1.  **Online Version:** Click [here]https://andreawk.shinyapps.io/starwars_explorer/) to open the Shiny app in your web browser, or paste the following link: <http://127.0.0.1:6417/> into your browser.
+1.  **Online Version:** Click [here](https://andreawk.shinyapps.io/starwars_explorer/) to open the Shiny app in your web browser, or paste the following link: <https://andreawk.shinyapps.io/starwars_explorer/> into your browser.
 
 2.  **Local Version:** Run the app in RStudio by executing the `app.R` file locally.
 
