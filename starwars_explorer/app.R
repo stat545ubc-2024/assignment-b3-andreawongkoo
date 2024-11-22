@@ -17,7 +17,8 @@ glimpse(starwars)
 ?starwars
 
 
-# App Features (also available on README file):
+
+# Functional App Features (also available on README file):
 
 ### Feature 1 - Filter by Species, Sex, Homeworld, and Film: This feature allows users to create a filtered character table by species, sex, homeworld, and film. It dynamically updates the displayed data based on the selected filters.
 
@@ -27,8 +28,7 @@ glimpse(starwars)
 
 ### Feature 4 - Bar Plot of Species Distribution by Category: This feature displays a bar plot showing the distribution of individuals from a selected species within the whole dataset, across categories such as homeworld, vehicles, and starships.
 
-#Feature 5 - Download Filtered Data by Species, Sex, and/or Homeworld: Users can download a `.csv` file containing the filtered character data from Feature 1. Note that the film filter is excluded for code simplicity.
-
+# Additional Aesthetic App Feature: A fixed Star Wars logo at the top right of the page to add visual appeal.
 
 
 # Shiny App Code below: 
@@ -45,7 +45,7 @@ ui <- fluidPage(
   # Data source credits:
   h6("Data source: This app uses the in-built `starwars` dataset in R from the `dplyr` package."),
   
-  # Absolute panel for the Star Wars logo image in the top-right corner
+  # Aesthetic feature: Absolute panel for the Star Wars logo image in the top-right corner
   absolutePanel(
     top = 10, right = 10, fixed = TRUE,
     img(src = "star_wars_logo.png", width = "100px")
@@ -85,12 +85,9 @@ ui <- fluidPage(
       selectInput("species_plot", "Select Species for bar plot",
                   choices = unique(starwars$species)),
       
-      # Feature 5: Download button for the filtered table
-      h4("Download Filtered Table data by Species, Sex and/or Homeworld:"),
-      downloadButton("download_data", "Download Filtered Table"),
       
       # Added note to account for errors:
-      h5(em("NOTE: Selecting categories that don't apply to certain characters may result in an error message ('Error: [Object] in Object')."))
+      h5(em("NOTE: Selecting categories that are missing for certain characters may result in an error message."))
       
     ),
     
@@ -192,16 +189,6 @@ server <- function(input, output, session) {
       theme_minimal() +
       theme(axis.text.x = element_text(angle = 45, hjust = 1))
   })
-  
-  # Feature 5: Downloads the filtered data as CSV
-  output$download_data <- downloadHandler(
-    filename = function() {
-      paste("filtered_starwars_data.csv")
-    },
-    content = function(file) {
-      write.csv(filtered_data(), file)
-    }
-  )
 }
 
 

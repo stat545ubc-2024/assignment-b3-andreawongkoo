@@ -12,7 +12,7 @@ This repository contains the necessary files to deploy the "Star Wars Explorer" 
 
 2.  **Local Version:** Run the app in RStudio by executing the `app.R` file locally.
 
-## App Features:
+## Functional App Features:
 
 -   **Feature 1 - Filter by Species, Sex, Homeworld, and Film**: This feature allows users to create a filtered character table by species, sex, homeworld, and film. It dynamically updates the displayed data based on the selected filters.
 
@@ -22,7 +22,9 @@ This repository contains the necessary files to deploy the "Star Wars Explorer" 
 
 -   **Feature 4 - Bar Plot of Species Distribution by Category:** This feature displays a bar plot showing the distribution of individuals from a selected species within the whole dataset, across categories such as homeworld, vehicles, and starships.
 
--   **Feature 5 - Download Filtered Data by Species, Sex, and/or Homeworld:** Users can download a `.csv` file containing the filtered character data from Feature 1. Note that the film filter is excluded for code simplicity.
+## Aesthetic App Features:
+- A fixed Star Wars logo at the top right of the page to add visual appeal for Star Wars fans. 
+
 
 ## Repository Contents:
 - **`README.md`**: This file, providing instructions and information about the app, dataset source, and features.
